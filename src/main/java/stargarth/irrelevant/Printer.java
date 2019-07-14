@@ -1,4 +1,4 @@
-package stargarth.core;
+package stargarth.irrelevant;
 
 import stargarth.parser.AbstractSyntaxTree;
 

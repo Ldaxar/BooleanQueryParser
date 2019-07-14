@@ -1,4 +1,4 @@
-package stargarth.core;
+package stargarth.irrelevant;
 
 import java.util.List;
 
@@ -7,7 +7,7 @@ import stargarth.parser.Parser;
 import stargarth.tokenizer.SimpleTokenizer;
 import stargarth.tokenizer.Token;
 
-public class Test {
+public class BadTest {
 
 	public static void main(String[] args) {
 		String query = "A > B >= (C < D) <= E";
