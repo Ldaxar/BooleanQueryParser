@@ -22,7 +22,7 @@ public class Demo {
 		valueMap.put("D", true);
 		valueMap.put("E", "elo");
 		String query = "A || $true == (C && D) || $false";
-		String query2 = "E -> [one,two,elo,three]";
+	//	String query2 = "E -> [one,two,elo,three]";
 		//String query = "A || B == (C && D) || E";
 //		String query = "A || B == (C && D || (H != J)) || E";
 //		String query = "A || B == (C && D || (H != J)) || E || A || B == (C && D || (H != J)) || E "

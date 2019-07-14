@@ -28,6 +28,8 @@ public class BadTest {
 		printParsingTree(n);
 		
 	}
+	
+	@SuppressWarnings("unused")
 	private static void printTokens(List<Token> tokens) {
 		for (Token token : tokens) {
 			System.out.println(token.toString());
