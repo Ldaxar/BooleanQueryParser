@@ -36,6 +36,11 @@ public class AbstractSyntaxTree {
 	public int getWeight() {
 		return weight;
 	}
+	
+	public AbstractSyntaxTree getRoot() {
+		if (parent != null) return parent.getRoot();
+		else return this;
+	}
 
 	public void setWeight(int weight) {
 		this.weight = weight;

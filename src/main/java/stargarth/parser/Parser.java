@@ -61,6 +61,6 @@ public class Parser {
 				break;
 			}
 		}
-		return previousNode;
+		return previousNode.getRoot();
 	}
 }
