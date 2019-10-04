@@ -32,14 +32,14 @@ public class QueryRunner {
 
 		return interpreter.interpretAst(ast, valueMap);
 	}
+	
+	public Boolean runQuery(AbstractSyntaxTree ast, Map<String, Object> valueMap) throws MissingValueException, WrongDataTypeException {
+		return interpreter.interpretAst(ast, valueMap);
+	}
 
 	public AbstractSyntaxTree generateAst(String query) {
 		List<Token> tokens = tokenizer.tokenize(query);
 		return parser.generateAst(tokens);
-	}
-
-	public Boolean interpretAst(AbstractSyntaxTree ast, Map<String, Object> valueMap) throws MissingValueException, WrongDataTypeException {
-		return interpreter.interpretAst(ast, valueMap);
 	}
 
 }

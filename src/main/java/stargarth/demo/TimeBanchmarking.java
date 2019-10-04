@@ -1,4 +1,4 @@
-package stargarth.irrelevant;
+package stargarth.demo;
 
 import java.util.HashMap;
 import java.util.List;
@@ -13,7 +13,7 @@ import stargarth.parser.Parser;
 import stargarth.tokenizer.SimpleTokenizer;
 import stargarth.tokenizer.Token;
 
-public class Demo {
+public class TimeBanchmarking {
 
 	public static void main(String[] args) {
 		Map<String, Object> valueMap = new HashMap<String, Object>();

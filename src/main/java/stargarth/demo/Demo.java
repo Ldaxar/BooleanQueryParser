@@ -1,4 +1,4 @@
-package stargarth.irrelevant;
+package stargarth.demo;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -7,9 +7,9 @@ import stargarth.interpreter.MissingValueException;
 import stargarth.interpreter.QueryRunner;
 import stargarth.interpreter.WrongDataTypeException;
 
-public class Demo2 {
+public class Demo {
 
-	public Demo2() {
+	public Demo() {
 		// TODO Auto-generated constructor stub
 	}
 

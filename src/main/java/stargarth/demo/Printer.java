@@ -1,4 +1,4 @@
-package stargarth.irrelevant;
+package stargarth.demo;
 
 import stargarth.parser.AbstractSyntaxTree;
 
