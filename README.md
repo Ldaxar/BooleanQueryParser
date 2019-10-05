@@ -9,6 +9,9 @@ It contains a small domain specific language that is almolst the same as Java ([
 - equality:&nbsp;&nbsp;&nbsp;**== !=**
 - and or: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&& ||**
 
+### What is the difference between BQP and bunch of if-else statements?
+It allows you to have dynamic conditions. Whenever your conditional logic changes, if-else java blocks have to be rewritten, application has to be re-builded and re-dployed. In case of BQP you just deploy modified query.<br/>
+Therefore it is useful whenever you deal with parts of application logic that are highly volatile.
 ## 2. How it works?
 It is absolutely trivial to use. 
 ```java
