@@ -8,9 +8,11 @@ It contains a small domain specific language that is almolst the same as Java ([
 - relational:&nbsp;**< > <= >=** 
 - equality:&nbsp;&nbsp;&nbsp;**== !=**
 - and or: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&& ||**
+- special: **->** <br/>
+Special operator -> checks whenever element is present in collection or not(A -> [word1, word2, word3])
 
 ### What is the difference between BQP and bunch of if-else statements?
-It allows you to have dynamic conditions. Whenever your conditional logic changes, if-else java blocks have to be rewritten, application has to be re-builded and re-dployed. In case of BQP you just deploy modified query.<br/>
+It allows you to have dynamic conditions. Whenever your conditional logic changes, if-else java blocks have to be rewritten, application has to be re-builded and re-deployed. In case of BQP you just deploy modified query.<br/>
 Therefore it is useful whenever you deal with parts of application logic that are highly volatile.
 ## 2. How it works?
 It is absolutely trivial to use. 
@@ -21,8 +23,8 @@ Boolean result = qr.runQuery(query, valueMap);
 ```
 There are 3 important components
 - **Map of parameters**: This collection contains parameters that are going to be used to resolve the query. It always has to be Java map with String as a key and Object as a value (**java.util.Map<String, Object>**).
-- **Query string**: Query save as java.lang.String. E.g **"A || $true == (C && D) || $false"**
-- **QueryRunner object**: **stargarth.interpreter.QueryRunner** is an engine that interprets the query/AST. It takes string query/AST as and parameter map as an input. It evaluates the query and returns boolean as an output.<br/><br/>
+- **Query string**: Query saved as a java.lang.String. E.g **"A || $true == (C && D) || $false"**
+- **QueryRunner object**: **stargarth.interpreter.QueryRunner** is an engine that interprets the query/AST. It takes string query/AST and parameter map as an input. It evaluates the query and returns boolean as an output.<br/><br/>
 
 ## 3. Demo
 There are two ways of running queries:
@@ -81,5 +83,6 @@ System.out.println(result);
 
 ```
 
+All contributions and feedback are deeply appreciated =)
 
 Proper readme will be added soon™
